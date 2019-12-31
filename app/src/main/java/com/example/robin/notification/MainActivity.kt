@@ -18,6 +18,8 @@ import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
 
+    //this a coding
+
     private val FCM_API = "https://fcm.googleapis.com/fcm/send"
     private val serverKey =
         "key=" + "Enter_your_server_key"
