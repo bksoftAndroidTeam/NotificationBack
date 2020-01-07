@@ -52,7 +52,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         val notificationSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
         val notificationBuilder = NotificationCompat.Builder(this, ADMIN_CHANNEL_ID)
-            .setSmallIcon(R.drawable.ic_delete)
+            //.setSmallIcon(R.drawable.ic_delete)
+            .setSmallIcon(R.drawable.ic_input_delete)
             .setLargeIcon(largeIcon)
             .setContentTitle(p0?.data?.get("title"))
             .setContentText(p0?.data?.get("message"))
@@ -62,7 +63,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         //Set notification color to match your app color template
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            notificationBuilder.color = resources.getColor(R.color.background_dark)
+            //notificationBuilder.color = resources.getColor(R.color.background_dark)
+            notificationBuilder.color = resources.getColor(R.color.holo_orange_dark)
         }
         notificationManager.notify(notificationID, notificationBuilder.build())
     }

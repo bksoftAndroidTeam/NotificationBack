@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     private val FCM_API = "https://fcm.googleapis.com/fcm/send"
     private val serverKey =
-        "key=" + "Enter_your_server_key"
+        "key=" + "AAAAuCG7YfI:APA91bHHlUFaeqZC-Y10NN0nO3cQ7T0qVbLvExrmgMzNbflP6fIBoL3yH58azIWh-5DUU-lhoW-p_5s_5UTJMRxeYY7XKN7tAdiWpsA6dZnZtqH7lDtcWnjzhhXb3BI-ht6BQHUjPXMx"
     private val contentType = "application/json"
     private val requestQueue: RequestQueue by lazy {
         Volley.newRequestQueue(this.applicationContext)
